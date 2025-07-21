@@ -1,0 +1,78 @@
+﻿Number Guessing Game
+A simple interactive Number Guessing Game written in Python. This game is designed for beginners to practice their Python programming skills and understand fundamental programming concepts.
+🎯 Game Objective
+Guess the randomly chosen number within 7 attempts, using feedback after each guess to find the correct number.
+🚀 Features
+* Random number generation within a user-defined range
+* Limited to 7 attempts per game
+* Interactive user prompts
+* Input validation (ensures only integer guesses)
+* Hints provided (“Too high” / “Too low”) after every incorrect guess
+* Reveals the correct answer if attempts are exhausted
+🖥️ How It Works
+1. The player is welcomed and prompted to input a lower and upper bound for the random number.
+2. The computer selects a number within that range.
+3. The user gets 7 guesses to find the correct number.
+4. After each guess, feedback is provided to help guide the next guess.
+5. The game ends if the number is guessed or attempts run out.
+📋 Example Session
+
+
+Hi! Welcome to the Number Guessing Game.
+You have 7 chances to guess the number. Let's start!
+Enter the Lower Bound: 10
+Enter the Upper Bound: 20
+
+
+You have 7 chances to guess the number between 10 and 20. Let's start!
+Enter your guess: 13
+Too low! Try a higher number.
+Enter your guess: 18
+Too high! Try a lower number.
+Enter your guess: 15
+Correct! The number is 15. You guessed it in 3 attempts.
+	
+
+📦 Installation & Running
+Requirements
+* Python 3.x installed on your system
+Quick Start
+1. Clone the Repository
+git clone https://github.com/<your-username>/<repository-name>.git
+cd <repository-name>
+	2. Run the Game
+python guessing_game.py
+	🛠️ Project Structure
+
+
+number-guessing-game/
+├── guessing_game.py      # Main Python script with game logic
+└── README.md             # Project documentation
+	
+
+📝 Code Explanation
+* Random number generation: Uses random.randint(low, high) to select the secret number.
+* Game loop: Uses a while loop to ensure the user gets a maximum of 7 guesses.
+* User feedback: After each guess, the program informs the user if the guess was too high or too low.
+* Input handling: Converts input to int and compares with the secret number.
+* End game: Informs the player if they win or lose and shows the correct answer if not guessed in time.
+👩‍💻 Contribution Guidelines
+* Fork this repository.
+* Create your feature branch: git checkout -b feature/your-feature
+* Commit your changes: git commit -am 'Add new feature'
+* Push to the branch: git push origin feature/your-feature
+* Start a Pull Request.
+🏷️ License
+This project is available under the MIT License. See the LICENSE file for more information.
+💡 Educational Value
+This project demonstrates:
+* Use of loops (while)
+* Conditionals (if, elif, else)
+* User input/output
+* Use of the random module
+* Basic error handling (can be expanded)
+📜 References
+* Beginner game design inspiration: ["Guess the Number" from Automate the Boring Stuff]
+* Python documentation and open source sharing guidelines
+Replace <your-username> and <repository-name> with your actual GitHub details before publishing.
+This documentation template is best practice for educational open-source projects on GitHub. Make sure to include this in your repository’s README.md before publishing.
